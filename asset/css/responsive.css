@@ -1,0 +1,83 @@
+/* PC */
+@media (min-width:  64em){
+
+}
+/* ipad */
+@media(min-width: 46.25em) and (max-width: 63.9375em){
+    .tour-section .place-buy-ticket {
+        line-height: 28.5px;
+        font-size: 15px;
+    }
+    #contact .form-control {
+        padding: 15px;
+    }
+    #contact .form-contact-btn {
+        padding: 15px 16px;
+    }
+    #footer .social-list a {
+        opacity: 0.6;
+        padding: 0px 8px;
+    }
+}
+/* mobile */
+@media(max-width: 46.1875em){
+    .s-col-full{
+        width: 100%;
+    }
+    .s-mt-8 {
+        margin-top: 8px;
+    }
+    #header{
+        overflow: hidden;
+    }
+    #header .search-btn {
+        display: none;
+    }
+    #header .menu-btn{
+        display: block;
+    }
+
+    #nav {
+        display: block;
+    }
+    #nav li{
+        display: block;
+    }
+    #nav li:first-child{
+        display: inline-block;
+    }
+    #nav .subnav{
+        position: initial;
+    }
+    #nav .subnav li{
+        background-color: #757575;
+    }
+    #nav .subnav li a{
+        padding-left: 41px;
+        color: #fff;
+    }
+    #content .member-img{
+        width: 60%;
+    }
+    #contact .contact-form {
+        margin-top: 16px;
+    }
+    #contact .form-contact-btn {
+        width: 100%;
+        padding: 9px 0px;
+         margin-right: 0px;
+    }
+    /* remove css form on iphone */
+    #contact .contact-form-submit{
+        appearance: none;
+        -webkit-appearance: none;
+    }
+    
+}
+/* Mobile and tablet */
+@media (max-width: 63.9375em) {
+    #contact .contact-info {
+        font-size: 18px;
+        line-height: 2;
+    }
+}

@@ -67,7 +67,7 @@ html {
 }
 
 #nav > li >  a{
-    display: inline-block;
+    display: block;
     color: white;
     padding: 12px 24px;
 }
@@ -120,10 +120,28 @@ html {
     right: 0;
     z-index: 1;
 }
+#header .menu-btn:hover{
+    background-color: #ccc;
+}
+#header .menu-btn:hover i.ti-menu{
+    color: #000;
+}
+#header .menu-btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 20px;
+    float: right;
+    padding: 0 20px;
+    color: #fff;
+    line-height: 46.5px;
+    display: none;
+}
 #header .search-btn:hover {
     background-color: #f44336;
     cursor: pointer;
 }
+
 #header .search-btn{
     font-size: 20px;
     float: right;
@@ -135,7 +153,7 @@ html {
 #slider{
     margin-top: 46.5px;
     padding-top: 50%;
-    background: url("/asset/img/slider/ny.jpg") top center / cover no-repeat;
+    background: url("../img/slider/ny.jpg") top center / cover no-repeat;
     position: relative;
 }
 
@@ -158,6 +176,7 @@ html {
     /* line-height: 82.5px; */
     margin-top: 25px;
     font-size: 15px;
+    text-shadow: 0 0 1px #000;
 }
 
 #content{
@@ -165,11 +184,14 @@ html {
 }
 
 #content .section-content {
-    width: 800px;
+    width: 768px;
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
     padding-top: 64px;
     padding-bottom: 112px;
+    padding-right: 16px;
+    padding-left: 16px;
 }
 #content .section-heading {
     font-size: 30px;
@@ -282,6 +304,7 @@ html {
     line-height: 1.4;
 }
 .tour-section .place-buy-ticket   {
+    line-height: 22.5px;
     text-decoration: none;
     color: white;
     background-color: black;
@@ -402,6 +425,13 @@ html {
 #contact .contact-info {
     font-size: 18px;
     line-height: 1.5;
+
+}
+#contact .contact-info a{
+    opacity: 0.8;
+}
+#contact .contact-info a:hover{
+    opacity: 1;
 }
 #contact .contact-icon {
     width: 30px;
@@ -435,8 +465,8 @@ html {
 
 #content .img-map{
     width: 100%;
-    height: 615px;
-    background-image: url(/asset/img/map.jpg);
+    padding-top: 50%;
+    background-image: url(../img/map.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     filter: grayscale(50%);
